@@ -19,26 +19,37 @@
 // "O nome do herói é [NOME] e ele é do nível [NÍVEL]"
 
 let nome = "John";
-let XP = "";
+let XP = 4999;
+let nivel = "";
+
+//O laço de repetição vai rodar 3 vezes.
+//i começa em 1 e enquanto ele for menor do que 3, ele vai rodar o código dentro do laço, e a cada vez que ele rodar, o valor de i vai aumentar em 1 (i++ é a mesma coisa que i = i + 1).
+for (let i = 1; i <= 3; i++) {
+
 
 if (XP <= 1000) {
-    let nivel = "ferro";
+    nivel = "ferro";
 } else if (XP >= 1001 && XP <= 2000) {
-    let nivel = "bronze";
+    nivel = "bronze";
 } else if (XP >= 2001 && XP <= 5000) {
-    let nivel = "prata";
+    nivel = "prata";
 } else if (XP >= 5001 && XP <= 7000) {
-    let nivel = "ouro";
+    nivel = "ouro";
 } else if (XP >= 7001 && XP <= 8000) {
-    let nivel = "platina";
+    nivel = "platina";
 } else if (XP >= 8001 && XP <= 9000) {
-    let nivel = "ascendente";
+    nivel = "ascendente";
 } else if (XP >= 9001 && XP <= 10000) {
-    let nivel = "imortal";
+    nivel = "imortal";
 } else if (XP >= 10001) {
-    let nivel = "radiante";
+    nivel = "radiante";
 }
 
-for (nivel
-
 console.log("O nome do herói é " + nome + " e ele é do nível " + nivel + ".");
+
+//Inseri o comando abaixo aqui, pois eu queria mostrar o processo de evolução do herói mostrando o nível que ele iniciou e como ele vai subindo de nível conforme ganha mais XP.
+//A cada repetição o herói ganhará 500 XP.
+    XP += 500;
+
+    //A chave abaixo fecha o laço de repetição.
+}
